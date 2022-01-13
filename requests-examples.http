@@ -9,8 +9,8 @@ POST http://127.0.0.1:8000/api/v1/products/
 Content-Type: application/json
 
 {
-  "title": "Дыня",
-  "description": "Свежая"
+  "title": "Вишня",
+  "description": "Мороженная"
 }
 
 ###
@@ -22,17 +22,17 @@ Content-Type: application/json
 ###
 
 # обновление продукта +
-PATCH http://127.0.0.1:8000/api/v1/products/5/
+PATCH http://127.0.0.1:8000/api/v1/products/7/
 Content-Type: application/json
 
 {
-  "description": "Очень сочная груша"
+  "description": "Сильно мороженная"
 }
 
 ###
 
 # удаление продукта +
-DELETE http://127.0.0.1:8000/api/v1/products/6/
+DELETE http://127.0.0.1:8000/api/v1/products/7/
 Content-Type: application/json
 
 ###
@@ -48,17 +48,17 @@ POST http://127.0.0.1:8000/api/v1/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес 1",
+  "address": "мой адрес 2",
   "positions": [
     {
       "product": 4,
-      "quantity": 10,
-      "price": 100
+      "quantity": 55,
+      "price": 155
     },
     {
       "product": 5,
-      "quantity": 20,
-      "price": 150
+      "quantity": 65,
+      "price": 165
     }
   ]
 }
@@ -66,20 +66,20 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH http://127.0.0.1:8000/api/v1/stocks/7/
+PATCH http://127.0.0.1:8000/api/v1/stocks/10/
 Content-Type: application/json
 
 {
   "positions": [
     {
       "product": 4,
-      "quantity": 15,
-      "price": 115
+      "quantity": 10,
+      "price": 10
     },
     {
       "product": 5,
-      "quantity": 25,
-      "price": 165
+      "quantity": 11,
+      "price": 11
     }
   ]
 }
