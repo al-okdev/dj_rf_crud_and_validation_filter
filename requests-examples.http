@@ -48,10 +48,10 @@ POST http://127.0.0.1:8000/api/v1/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес 2",
+  "address": "мой адрес 5",
   "positions": [
     {
-      "product": 4,
+      "product": 8,
       "quantity": 55,
       "price": 155
     },
@@ -87,5 +87,5 @@ Content-Type: application/json
 ###
 
 # поиск складов, где есть определенный продукт
-GET http://127.0.0.1:8000/api/v1/stocks/?products=5
+GET http://127.0.0.1:8000/api/v1/stocks/?products_title=груша&products_description=со
 Content-Type: application/json
