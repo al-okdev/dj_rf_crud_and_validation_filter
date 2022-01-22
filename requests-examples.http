@@ -48,7 +48,7 @@ POST http://127.0.0.1:8000/api/v1/stocks/
 Content-Type: application/json
 
 {
-  "address": "мой адрес 5",
+  "address": "мой адрес 7",
   "positions": [
     {
       "product": 8,
@@ -66,7 +66,7 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH http://127.0.0.1:8000/api/v1/stocks/10/
+PATCH http://127.0.0.1:8000/api/v1/stocks/15/
 Content-Type: application/json
 
 {
